@@ -1,0 +1,230 @@
+1)Write 5 Test cases to purchase the phone.
+
+1.check user is able to reach the site through url
+2.check user is able to view all the products.
+3.check mobile in the product.
+4.check user is able to login successfully.
+5.check user is able to add to cart the product.
+6.Verify that mobile can be switched off and ON.
+7.check user is able to buy the product.
+8.check user is able to logout successfully. 
+
+
+2)Now state different behaviour while login and another for logouts how Test Cases will be different.
+ 
+ For login us test cases -
+1)Verify if a user will be able to login with a valid username and valid password.
+2)Verify if a user cannot login with a valid username and an invalid password.
+3)Verify the login page for both, when the field is blank and Submit button is clicked.
+4)Verify the ‘Forgot Password’ functionality.
+5)Verify the ‘Remember Me’ functionality.
+6)show massage login successful.
+
+For logout-
+1)Verify by clicking on the logout s button, after successful logout on the login screen press the back button.
+2)Verify  After logout tries to re-login with the same or different account it’s allowing or not.
+3)Verify, login into more than two browser or mobiles and logout from anyone from them and check all other account is properly working or all get logout.
+4)The logout option should not be visible till the user is logged in.
+5)Verify all UI components are visible properly.
+6)show massage login logout successful.
+
+3)If you are the owner of amazon which test cases you will do every morning.
+
+1)check user is able to reach the site through url
+2)Verify the web-site is properly working or not.
+2)check user is able to view all the products.
+4)Verify that all the text – product, category name, price, and product description are clearly visible. 
+5)Verify that the user is able to navigate through all the products across different categories.
+6)Verify that all the images – product and banner are clearly visible.
+7)Verify that the company logo is clearly visible.
+
+4)If you want to automate avoid how will you do that?
+
+
+1)Drive testing entirely through the user interface
+2)Manual Testing will be preferred.
+
+
+5)Russian Hackers is creating fake orders, so how will you prevent it.
+
+1) will add security to order page also testcase to check if all orders are from valid user or not.
+or
+1)Install A Security Software.
+2)Only online payment options. 
+3)Contact Through Email.
+4)Call Them For Security Purpose.
+5)Confirm Once Before Shipping The Order.
+
+
+6)Create a local git repository with java project
+
+https://github.com/theswapnilshinde/ASDM-EXAM-Project.git
+git init
+
+7)Commit the initial code
+
+F:\asdm-exam-gitfolder>git init
+Initialized empty Git repository in F:/asdm-exam-gitfolder/.git/
+git add .
+git commit -m "committed by swapnil"
+
+8)Update the code
+ add .
+ git commit -m "committed by swapnil"
+
+
+9)Use git commands to:
+F:\asdm-exam-gitfolder>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello.txt
+a.Get the updated files
+git status
+
+b.List the changes
+git log
+
+c.Create branch
+git branch helloexam
+
+d.Merge branch
+git checkout master
+git merge hotfix
+
+10)Create a repository on github
+
+github->create repository->name->public->save
+
+11)Push the local changes to github
+git remote add origin https://github.com/Komal0929/ExamSDM.git
+git push origin master
+
+12)Pull the code from github
+git pull origin master
+
+
+13)Create and checkout a branch
+git branch coldfix
+git checkout coldfix
+
+14)Add a new feature commit and push changes to github
+git add new.java
+git commit -m "new file added"
+git push origin master
+
+15)Create a pull request
+git pull origin master
+
+16)Review the changes on GitHub and merge the branch into the main branch
+git checkout main
+git merge hotfix
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+D:\cdaq\ExamSdm>git init
+Initialized empty Git repository in D:/cdaq/ExamSdm/.git/
+
+D:\cdaq\ExamSdm>
+D:\cdaq\ExamSdm>
+D:\cdaq\ExamSdm>git add .
+
+D:\cdaq\ExamSdm>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello.java
+
+
+D:\cdaq\ExamSdm>git commit -m "initial code added"
+[master (root-commit) fa6c318] initial code added
+ 1 file changed, 4 insertions(+)
+ create mode 100644 hello.java
+
+D:\cdaq\ExamSdm>
+D:\cdaq\ExamSdm>
+D:\cdaq\ExamSdm>
+D:\cdaq\ExamSdm>
+D:\cdaq\ExamSdm>git remote add origin https://github.com/Komal0929/ExamSDM.git
+
+D:\cdaq\ExamSdm>git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 286 bytes | 286.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Komal0929/ExamSDM.git
+ * [new branch]      master -> master
+
+D:\cdaq\ExamSdm>
+D:\cdaq\ExamSdm>git pull origin https://github.com/Komal0929/ExamSDM.git
+fatal: invalid refspec 'https://github.com/Komal0929/ExamSDM.git'
+
+D:\cdaq\ExamSdm>git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 652 bytes | 72.00 KiB/s, done.
+From https://github.com/Komal0929/ExamSDM
+ * branch            master     -> FETCH_HEAD
+   fa6c318..5e71754  master     -> origin/master
+Updating fa6c318..5e71754
+Fast-forward
+ new.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new.txt
+
+D:\cdaq\ExamSdm>git branch hotfix
+
+D:\cdaq\ExamSdm>git checkout hotfix
+Switched to branch 'hotfix'
+
+D:\cdaq\ExamSdm>git merge master
+Already up to date.
+
+D:\cdaq\ExamSdm>git chekcout hotfix
+git: 'chekcout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+D:\cdaq\ExamSdm>git checkcout hotfix
+git: 'checkcout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+D:\cdaq\ExamSdm>git checkout hotfix
+Already on 'hotfix'
+
+D:\cdaq\ExamSdm>git checkout master
+Switched to branch 'master'
+
+D:\cdaq\ExamSdm>git merge hotfix
+Already up to date.
+
+D:\cdaq\ExamSdm>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\cdaq\ExamSdm>git log
+commit 5e717542d3613bee7bb55d793fb59ac14c19b654 (HEAD -> master, origin/master, hotfix)
+Author: Komal0929 <97611782+Komal0929@users.noreply.github.com>
+Date:   Sat Mar 12 11:58:33 2022 +0530
+
+    new file added
+
+commit fa6c31860d8d01ac777931258f941fe9f235e53b
+Author: komal0929 <komalghare32@gmail.com>
+Date:   Sat Mar 12 11:57:00 2022 +0530
+
+    initial code added 
